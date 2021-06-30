@@ -5,8 +5,8 @@ import CardList from '../components/CardList';
 import './App.css';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props) //calls constructor of Component
+  constructor() {
+    super() //calls constructor of Component
     this.state= {
       robots: [],
       searchField: ''
