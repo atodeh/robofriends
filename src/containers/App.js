@@ -24,8 +24,9 @@ class App extends React.Component {
     }
 
   render() {
-    const filteredRobots = this.state.robots.filter(item => {
-      return item.name.toLowerCase().includes(this.state.searchField.toLowerCase());
+    const { robots, searchField } = this.state; //destructuring
+    const filteredRobots = robots.filter(item => {
+      return item.name.toLowerCase().includes(searchField.toLowerCase());
     })
     return (
     <div className='tc'>
